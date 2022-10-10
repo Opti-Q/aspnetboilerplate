@@ -16,6 +16,18 @@
     <GenerateAssemblyCopyrightAttribute>false</GenerateAssemblyCopyrightAttribute>
     <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
     <RootNamespace>Abp</RootNamespace>
+	  <RepositoryUrl>https://github.com/Opti-Q/aspnetboilerplate.git</RepositoryUrl> 
+	  <RepositoryType>git</RepositoryType> 
+	  <Version>2.3.1-optiq0001</Version>
+	  <Authors>amarek</Authors>
+	  <Company>Opti-Q GmbH</Company>
+	  <PackageReleaseNotes>
+		  # 2.3.1-optiq0001
+		  - EFRepositoryonlyBase - if entity had to be attached, we do set its state to "Modified" this ensures, that unnecessary calls to "UpdateAsync" result in the whole entity being set "dirty" as opposed to just the properties that changed!
+
+	      # 2.3.1
+			... base package
+	  </PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
